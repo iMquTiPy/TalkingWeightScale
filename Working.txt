@@ -1,0 +1,10 @@
+-> Talking weighing scale for visually impaired students with a button to detect the data present on the weighing scale.
+-> Hardware used in Talking Color Sensor : Raspberry pi 3 with a camera module , a component speaker and raspi Hat.
+-> Each digit on the weighing scale is represented by a  seven-segment component. Seven-segment displays can take on a total of 128 possible states.
+-> However we need to recognise only 10 values - the digit zero to nine 
+-> First, we have to detect screen display from the original image.
+-> Apply Contour detection method to detect only screen display.
+-> Apply  basic  threshold and morphological operation on the display screen. 
+-> Again apply contour detection code to Identify the digits
+-> We start looping over each of the digit contours and extract each individual digit by comparing all the seven segments and detect which one is on/off.
+-> We now have the digits extracted from the image.
